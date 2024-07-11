@@ -22,16 +22,46 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <button class="btn white-btn" id="loginBtn">Sign In</button>
-                <button class="btn" id="registerBtn">Sign In</button>
+                <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+                <button class="btn" id="registerBtn" onclick="register()">Sign In</button>
             </div>
             <div class="nav-menu-btn">
-                <i class="bx bx-menu"></i>
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
             </div>
         </nav>
 
 <!--------------------------------Form Box---------------------------------------->
         <div class="form-box">
+            <!-----------------------Login From------------------------------>
+            <div class="login-container" id="login">
+                <div class="top">
+                    <span>Don´t have an accoun? <a href="#" onclick="register()">Sign Up</a></span>
+                    <header>Login</header>
+                </div>
+               
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="User or Email">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Sing In">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="login-check">
+                        <label for="login-check">Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">| Forgot Password</a></label>
+                    </div>
+                </div>
+            </div>
+
+
             <!-----------------------Registro From------------------------------>
             <div class="register-container" id="register">
                 <div class="top">
@@ -72,5 +102,9 @@
         </div>
 
     </div>
+    
+    <script src="script2.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
