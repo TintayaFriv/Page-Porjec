@@ -1,5 +1,5 @@
-var a = document.getElementById("loginbtn");
-var b = document.getElementById("registerbtn");
+var a = document.getElementById("loginBtn");
+var b = document.getElementById("registerBtn");
 var x = document.getElementById("login");
 var y = document.getElementById("register");
 
